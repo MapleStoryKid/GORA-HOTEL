@@ -1,0 +1,51 @@
+.hover01, .hover02{
+    position: relative;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    cursor: pointer;
+
+}
+
+  .hover01:after{
+  content: "";
+  pointer-events: none;
+  bottom: -3px;
+  left: 0%;
+  position: absolute;
+  width: 0%;
+  height: 1.5px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+.hover01:hover:after,.hover02:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+
+
+.nav-wrapper-active .hover01:after{
+    background-color: black;
+
+}
+
+
+
+
+
+.hover02:after {
+  content: "";
+  pointer-events: none;
+  bottom: -3px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 1.5px;
+  background-color: black;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}

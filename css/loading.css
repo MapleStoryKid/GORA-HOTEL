@@ -1,0 +1,154 @@
+.logo{
+    opacity: 0;
+    display: flex;
+    position:absolute;
+    top:43%;
+    left: 34%;
+    width: 560px;
+    height: 120px;
+    background: url("../images/logo_hotel.png");
+    background-repeat: no-repeat;
+    animation: hideLogo 6s ease-in forwards;
+  }
+
+  .loading-wrap {
+    height: 1000px;
+    width: 100vw;
+    display: block;
+
+
+    background-color: black;
+    position:relative;
+    z-index: 999999999;
+    animation: hideSplashScreen 6s ease-in forwards;
+
+  }
+  
+  
+  @keyframes hideSplashScreen {
+    0% {
+      opacity: 0;
+
+      
+    }
+  
+    33% {
+        opacity: 1;
+
+      
+  
+    }
+    66% {
+        opacity: 1;
+  
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+  }
+    }
+  
+    @keyframes hideLogo {
+      0% {
+        opacity:0;
+        
+      }
+    
+      33% {
+        opacity:0;
+        
+    
+      }
+      66% {
+        opacity:1;
+        
+    
+      }
+      100%{
+        opacity:0;
+        display: none;
+    }
+      }
+
+
+
+      /*.loading_wrap {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  background: #fff;
+  z-index: 9999999;
+  animation: loadingBG 1.2s forwards;
+  -webkit-animation: loadingBG 1.2s forwards;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+      
+      .loading_wrap .logo {
+        position: absolute;
+        top: 49%;
+        left: 50%;
+        width: 560px;
+        height: 315px;
+        transform: translate(-50%, -50%) scale(0.4);
+        -webkit-transform: translate(-50%, -50%) scale(0.4);
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        overflow: hidden;
+        background: url(../images/loading-logo.png) no-repeat;
+        background-position: center;
+        animation: loading 1.3s steps(32) forwards;
+        -webkit-animation: loading 1.3s steps(32) forwards;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+      }
+      
+      .loading_wrap .logo.zoom {
+        transform: translate(-50%, -50%) scale(0.35);
+        -webkit-transform: translate(-50%, -50%) scale(0.35);
+      }
+      
+      @-webkit-keyframes loadingBG {
+        from {
+          background: #fff;
+        }
+        to {
+          background: #111;
+        }
+      }
+      
+      @keyframes loadingBG {
+        from {
+          background: #fff;
+        }
+        to {
+          background: #111;
+        }
+      }
+      
+      @-webkit-keyframes loading {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 0 -10080px;
+        }
+      }
+      
+      @keyframes loading {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 0 -10080px;
+        }
+      } */
+    
+  
+
+  
