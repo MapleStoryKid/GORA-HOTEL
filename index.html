@@ -19,13 +19,13 @@
         <div class="nav-sub">
 
             <div class="nav-sub-languages">
-                <a href="#" language="japanese" class="langNav nav-JP">JP</a>
+                <a href="#" language="japanese" id="langNav" class="nav-JP">JP</a>
                 <span class="nav-sub-divider"></span>
-                <a href="#" language="english" class="langNav nav-EN">EN</a>
+                <a href="#" language="english" id="langNav" class="nav-EN">EN</a>
                 <span class="nav-sub-divider"></span>
-                <a href="#" language="chinese" class="langNav nav-CN">CN</a>
+                <a href="#" language="chinese" id="langNav" class="nav-CN">CN</a>
                 <span class="nav-sub-divider"></span>
-                <a href="#" language="korean" class="langNav nav-KR">KR</a>
+                <a href="#" language="korean" id="langNav" class="nav-KR">KR</a>
             </div>
 
             <div class="nav-sub-room-search">
@@ -75,47 +75,47 @@
                 </h1>
                 <ul class="nav-list">
                     <li>
-                        <a href="#" class="hover01">ご宿泊</a>
+                        <a href="#" id="nav-list-stay-btn" class="hover01">ご宿泊</a>
                     </li>
                     <li>
-                        <a href="#" class="hover01">日帰り</a>
+                        <a href="#" id="nav-list-dayTrip-btn" class="hover01">日帰り</a>
                     </li>
                     <li>
-                        <a href="#" class="hover01">懐石料理 花壇</a>
+                        <a href="#" id="nav-list-restaurant-btn" class="hover01">懐石料理 花壇</a>
                     </li>
                     <li>
-                        <a href="#" class="hover01">お知らせ</a>
+                        <a href="#" id="nav-list-news-btn" class="hover01">お知らせ</a>
                     </li>
                     <li>
-                        <a href="#" class="hover01">ギャラリー</a>
+                        <a href="#" id="nav-list-gallery-btn" class="hover01">ギャラリー</a>
                     </li>
                     <li>
-                        <a href="#" class="hover01">アクセス</a>
+                        <a href="#" id="nav-list-access-btn" class="hover01">アクセス</a>
                     </li>
                     <li>
-                        <a href="#" class="hover01">施設を巡る</a>
+                        <a href="#" id="nav-list-facilities-btn" class="hover01">施設を巡る</a>
                     </li>
                     <li>
-                        <a href="#" class="hover01">周辺を巡る</a>
+                        <a href="#" id="nav-list-activities-btn" class="hover01">周辺を巡る</a>
                     </li>
                     <li>
-                        <a href="#" class="hover01">SPA</a>
+                        <a href="#" id="nav-list-SPA-btn" class="hover01">SPA</a>
                     </li>
 
                 </ul>
 
                 <div class="nav-right">
                     <div class="nav-languages">
-                        <a href="#" class="nav-JP">JP</a>
+                        <a href="#" language="japanese" id="langNav" class="nav-JP">JP</a>
                         <span class="divider"></span>
-                        <a href="#" class="nav-EN">EN</a>
+                        <a href="#" language="english" id="langNav" class="nav-EN">EN</a>
                         <span class="divider"></span>
-                        <a href="#" class="nav-CN">CN</a>
+                        <a href="#" language="chinese" id="langNav" class="nav-CN">CN</a>
                         <span class="divider"></span>
-                        <a href="#" class="nav-KR">KR</a>
+                        <a href="#" language="korean" id="langNav" class="nav-KR">KR</a>
                     </div>
                     <div class="nav-room-search">
-                        <a href="#">
+                        <a id="nav-room-search-text" href="#">
                             空室検索
                         </a>
                     </div>
@@ -447,43 +447,58 @@
 
 
 
-            const link = document.querySelectorAll('.langNav');
-            const staySectionTitle = document.querySelector('.stay-section-title')
+            const link = document.querySelectorAll('a');
+            const staySectionTitle = document.querySelector('.stay-section-title');
+            const navListStayBtn = document.querySelector('#nav-list-stay-btn');
+            const navListDayTripBtn = document.querySelector('#nav-list-dayTrip-btn');
+            const navListRestaurantBtn = document.querySelector('#nav-list-restaurant-btn');
+            const navListNewsBtn = document.querySelector('#nav-list-news-btn');
+            const navListGalleryBtn = document.querySelector('#nav-list-gallery-btn');
+            const navListAccessBtn = document.querySelector('#nav-list-access-btn');
+            const navListFacliitiesBtn = document.querySelector('#nav-list-facilities-btn');
+            const navListActivitiesBtn = document.querySelector('#nav-list-activities-btn');
 
 
-            link.foreach(e => {
-                e.addEventListener('click', () => {
-                    const attr = e.getAttribute('language');
-                    console.log(attr);
 
-                    staySectionTitle.innerHTML = languagesData[attr].stay-section-title;
-                })
-            })
+            link.forEach(el => {
+			el.addEventListener('click', () => {
+
+				const attr = el.getAttribute('language');
+				console.log(attr);
+
+				staySectionTitle.textContent = languagesData[attr].staySectionTitle;
+
+
+                navListStayBtn.textContent = languagesData[attr].navListStayBtn;
+                navListDayTripBtn.textContent = languagesData[attr].navListDayTripBtn;
+                navListRestaurantBtn.textContent = languagesData[attr].navListRestaurantBtn;
+                navListNewsBtn.textContent = languagesData[attr].navListNewsBtn;
+                navListGalleryBtn.textContent = languagesData[attr].navListGalleryBtn;
+                navListAccessBtn.textContent = languagesData[attr].navListAccessBtn;
+                navListFacliitiesBtn.textContent = languagesData[attr].navListFacliitiesBtn;
+                navListActivitiesBtn.textContent = languagesData[attr].navListActivitiesBtn;
+
+
+			});
+		});
 
         
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             let languagesData ={
                 "english":{
-                    "stay-section-title": "I like money as I like pizza",
-			    "description": 
-				    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci eligendi repellat ad dolor veritatis itaque sequi minus iste, doloremque. Officiis non eaque atque excepturi repudiandae nulla eos eligendi magni molestiae eius distinctio, voluptas pariatur incidunt et culpa inventore aspernatur recusandae nihil asperiores, vitae, maiores laborum quasi perspiciatis natus dignissimos! Accusantium aliquam nostrum impedit dignissimos iste, iure inventore! Sapiente, labore earum ut dicta ducimus asperiores laudantium natus officiis, quisquam placeat aspernatur voluptatum aut voluptates tenetur quos magni fugit quia. Fugiat."
+                    "staySectionTitle": "Stay",
+
+			         "navListStayBtn": "Stay",
+                     "navListDayTripBtn": "Day Trip",
+                     "navListRestaurantBtn": "Kaiseki Restaurant",
+                     "navListNewsBtn": "News",
+                     "navListGalleryBtn": "Gallery",
+                     "navListAccessBtn": "Access",
+                     "navListFacliitiesBtn": "Facliities",
+                     "navListActivitiesBtn": "Activities",
+                     
+
 
                 }
             }
