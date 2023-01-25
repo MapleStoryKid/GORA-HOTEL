@@ -11,7 +11,7 @@
 <body>
     <div class="loading-wrap"><div class="logo"></div></div>
 
-    <nav class="all-screen-nav">
+    <nav class="all-screen-nav" >
         <button class="nav-close-btn">
             <i class="uil uil-multiply"></i>
         </button>
@@ -125,7 +125,7 @@
                <div class="top-movie">
                   <video class="top-video" muted autoplay playsinline src="./images/top-fv-01.mp4"></video>
                 <div class="reserve-btn">
-                    <a href="#">空室検索</a>
+                    <a href="#" id="nav-room-search-text" >空室検索</a>
                 </div>
             </div>
 
@@ -135,7 +135,7 @@
             <div class="about-logo">
                 <img src="https://www.gorakadan.com/wp/wp-content/themes/gorakadan/images/common/ttl-mark.svg" alt="">
             </div>
-            <p>
+            <p id="about-content">
                 箱根強羅の旧閑院宮別邸跡地に
                 <br class="sp-hide">
                 立地する強羅花壇。
@@ -449,6 +449,12 @@
 
             const link = document.querySelectorAll('a');
             const staySectionTitle = document.querySelector('.stay-section-title');
+
+            const navRoomSearchText = document.querySelectorAll('#nav-room-search-text');//////////////////////////
+
+
+   
+            
             const navListStayBtn = document.querySelector('#nav-list-stay-btn');
             const navListDayTripBtn = document.querySelector('#nav-list-dayTrip-btn');
             const navListRestaurantBtn = document.querySelector('#nav-list-restaurant-btn');
@@ -457,6 +463,8 @@
             const navListAccessBtn = document.querySelector('#nav-list-access-btn');
             const navListFacliitiesBtn = document.querySelector('#nav-list-facilities-btn');
             const navListActivitiesBtn = document.querySelector('#nav-list-activities-btn');
+
+            const aboutContent = document.querySelector('#about-content');
 
 
 
@@ -468,7 +476,8 @@
 
 				staySectionTitle.textContent = languagesData[attr].staySectionTitle;
 
-
+                navRoomSearchText.textContent = languagesData[attr].navRoomSearchText;
+                
                 navListStayBtn.textContent = languagesData[attr].navListStayBtn;
                 navListDayTripBtn.textContent = languagesData[attr].navListDayTripBtn;
                 navListRestaurantBtn.textContent = languagesData[attr].navListRestaurantBtn;
@@ -477,6 +486,10 @@
                 navListAccessBtn.textContent = languagesData[attr].navListAccessBtn;
                 navListFacliitiesBtn.textContent = languagesData[attr].navListFacliitiesBtn;
                 navListActivitiesBtn.textContent = languagesData[attr].navListActivitiesBtn;
+
+                aboutContent.innerHTML = languagesData[attr].aboutContent;
+
+        
 
 
 			});
@@ -488,6 +501,8 @@
             let languagesData ={
                 "english":{
                     "staySectionTitle": "Stay",
+                    
+                    "navRoomSearchText": "Search",
 
 			         "navListStayBtn": "Stay",
                      "navListDayTripBtn": "Day Trip",
@@ -497,8 +512,8 @@
                      "navListAccessBtn": "Access",
                      "navListFacliitiesBtn": "Facliities",
                      "navListActivitiesBtn": "Activities",
-                     
 
+                     "aboutContent": "Gora Kadan is located on the grounds of Kan’in-no-miya Villa,the former summer villa of a member of the Imperial Family in the town of Gora in Hakone.<br>In this villa, which blends Japanese tradition along with modern design elements,we offer hot spring waters that flow freely from the sourceand an authentic kaiseki cuisine prepared with strictly selected seasonal ingredients. <br>We hope you will enjoy a blissful moment in a traditional Japanese atmosphere at Gora Kadan.",
 
                 }
             }
