@@ -563,6 +563,8 @@ transition: .3s;
   text-align: center;
   margin-bottom: 20px;
   letter-spacing: 0.2em;
+
+  opacity: 0;
 }
 
 .news-wrap dl{
@@ -571,6 +573,8 @@ transition: .3s;
   display: flex;
   align-items: center;
   position:relative;
+
+  opacity: 0;
   /****************** flex는 임의로 추가한 것임 나중에 다시 검토 요망 ***********************/
 }
 
@@ -628,6 +632,7 @@ transition: .3s;
   margin: 0 auto;
   display: block;
   width: 120px;
+  opacity: 0;
 }
 
 
@@ -658,6 +663,7 @@ transition: .3s;
   height:calc(100vw / 16 * 9);
   max-height: 700px;
   position: relative;
+  opacity: 0;
 }
 
 .gallery-movie-play-btn{
@@ -744,6 +750,7 @@ transition: .3s;
   margin: 0 auto;
   display: block;
   width: 120px;
+  opacity: 0;
 }
 
 

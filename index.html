@@ -447,61 +447,7 @@
 
 
 
-            const link = document.querySelectorAll('a');
-            const staySectionTitle = document.querySelector('.stay-section-title');
-            const navListStayBtn = document.querySelector('#nav-list-stay-btn');
-            const navListDayTripBtn = document.querySelector('#nav-list-dayTrip-btn');
-            const navListRestaurantBtn = document.querySelector('#nav-list-restaurant-btn');
-            const navListNewsBtn = document.querySelector('#nav-list-news-btn');
-            const navListGalleryBtn = document.querySelector('#nav-list-gallery-btn');
-            const navListAccessBtn = document.querySelector('#nav-list-access-btn');
-            const navListFacliitiesBtn = document.querySelector('#nav-list-facilities-btn');
-            const navListActivitiesBtn = document.querySelector('#nav-list-activities-btn');
 
-
-
-            link.forEach(el => {
-			el.addEventListener('click', () => {
-
-				const attr = el.getAttribute('language');
-				console.log(attr);
-
-				staySectionTitle.textContent = languagesData[attr].staySectionTitle;
-
-
-                navListStayBtn.textContent = languagesData[attr].navListStayBtn;
-                navListDayTripBtn.textContent = languagesData[attr].navListDayTripBtn;
-                navListRestaurantBtn.textContent = languagesData[attr].navListRestaurantBtn;
-                navListNewsBtn.textContent = languagesData[attr].navListNewsBtn;
-                navListGalleryBtn.textContent = languagesData[attr].navListGalleryBtn;
-                navListAccessBtn.textContent = languagesData[attr].navListAccessBtn;
-                navListFacliitiesBtn.textContent = languagesData[attr].navListFacliitiesBtn;
-                navListActivitiesBtn.textContent = languagesData[attr].navListActivitiesBtn;
-
-
-			});
-		});
-
-        
-
-
-            let languagesData ={
-                "english":{
-                    "staySectionTitle": "Stay",
-
-			         "navListStayBtn": "Stay",
-                     "navListDayTripBtn": "Day Trip",
-                     "navListRestaurantBtn": "Kaiseki Restaurant",
-                     "navListNewsBtn": "News",
-                     "navListGalleryBtn": "Gallery",
-                     "navListAccessBtn": "Access",
-                     "navListFacliitiesBtn": "Facliities",
-                     "navListActivitiesBtn": "Activities",
-                     
-
-
-                }
-            }
 
 
 
@@ -518,6 +464,7 @@
 
         </script>
         <script src="/js/fade-in.js"></script>
+        <script src="/js/Languages.js"></script>
 
     
     
