@@ -14,6 +14,7 @@ main{
   padding-bottom: 160px;
   position: relative;
   z-index: 1;
+  width: 100vw;
 }
 
 .all-screen-nav{
@@ -354,7 +355,18 @@ transition: .3s;
   padding: 400px 0;
   text-align: center;
   line-height: 3;
+
 }
+
+.about-section-text{
+  /* below fade-in effect */
+  opacity: 0;
+  transform: translateY(30%);
+}
+
+
+
+
 
 
 .about-room-btn {
@@ -363,6 +375,7 @@ transition: .3s;
   box-sizing: border-box;
   letter-spacing: 4px;
   text-align: center;
+  opacity: 0;
 }
 
 .about-room-btn a{
@@ -388,15 +401,15 @@ transition: .3s;
 .stay-section{
   display: flex;
   flex-direction: column;
-
   align-items: center;
+
+  opacity:0;
 }
 
 
 .stay-section-title{
   font-size: 2.2rem;
   text-align: center;
-
   margin-bottom: 50px;
 }
 
@@ -536,6 +549,7 @@ transition: .3s;
   width: auto;
   margin: 0 auto;
   display: inline-block;
+  opacity: 0;
 }
 
 
@@ -914,4 +928,26 @@ footer{
 
 
 
+}
+.about-section-text{
+  /* below fade-in effect */
+  opacity: 0;
+
+}
+
+.fade-in-bottom{
+  animation: fade-in-bottom 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+
+@keyframes fade-in-bottom {
+  0% {
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
