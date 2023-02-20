@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300&display=swap');
 @import "reset.css";
 @import "button.css";
 /* @import "loading.css"; */
@@ -28,8 +31,20 @@ main{
   box-sizing: border-box;
   border: 25px solid black;
   display:none;
+  animation: puff-in-center 1s both;
+}
 
-
+@keyframes puff-in-center {
+  0% {
+            transform: scale(2);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+            transform: scale(1);
+            filter: blur(0px);
+    opacity: 1;
+  }
 }
 
 .show-sub-nav{
@@ -599,6 +614,8 @@ transition: .3s;
 
 
 
+
+
 .newsWrap1stBox,
 .newsWrap2ndBox,
 .newsWrap3rdBox,
@@ -607,6 +624,11 @@ transition: .3s;
   border: 1px solid #cccccc;
   padding: 5px 10px;
   margin-left: 15px;
+}
+
+
+.newsWrapMid{
+  overflow: visible;
 }
 
 .news-wrap dl a:after {
@@ -705,7 +727,10 @@ transition: .3s;
   height: 100%;
   background: white;
   z-index:-100;
-  visibility: hidden;
+  /* visibility: hidden; */
+  animation: puff-in-center 1s both;
+
+  display: none;
 
 }
 
@@ -736,8 +761,10 @@ transition: .3s;
 }
 
 
+
+
 .show-video{
-  visibility: visible;
+  display: block;
   z-index: 99999999999;
   /* whatever first!! */
 

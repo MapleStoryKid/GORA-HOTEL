@@ -10,6 +10,25 @@ const navListFacliitiesBtnForLan = document.querySelector('#nav-list-facilities-
 const navListActivitiesBtnForLan = document.querySelector('#nav-list-activities-btn');
 const navRoomSearchTextForLan = document.querySelector("#nav-room-search-text");
 const reserveBtnForLan = document.querySelector(".reserve-btn a");
+
+
+
+const navSubRoomSearchForLan = document.querySelector(".nav-sub-room-search");
+const navListVerticalHomeForLan = document.querySelector(".nav-list-vertical-home");
+const navListVerticalStayForLan = document.querySelector(".nav-list-vertical-stay");
+const navListVerticalDayTripForLan = document.querySelector(".nav-list-vertical-dayTrip");
+const navListVerticalRestaurantForLan = document.querySelector(".nav-list-vertical-restaurant");
+const navListVerticalNewsForLan = document.querySelector(".nav-list-vertical-news");
+const navListVerticalGalleryForLan = document.querySelector(".nav-list-vertical-gallery");
+const navListVerticalAccessForLan = document.querySelector(".nav-list-vertical-access");
+const navListVerticalFacilitiesForLan = document.querySelector(".nav-list-vertical-facilities");
+const navListVerticalActivitiesForLan = document.querySelector(".nav-list-vertical-activities");
+const navListVerticalShoppingForLan = document.querySelector(".nav-list-vertical-shopping");
+const navListVerticalQuestionForLan = document.querySelector(".nav-list-vertical-question");
+
+
+
+
 const aboutSectionTextForLan = document.querySelector(".about-section-text");
 const aboutRoomBtnForLanForLan = document.querySelector(".about-room-btn a");
 const allRoomsBtnForLan = document.querySelector(".all-rooms-btn");
@@ -63,6 +82,36 @@ el.addEventListener('click', () => {
     navListActivitiesBtnForLan.textContent = languagesData[attr].navListActivitiesBtn;
     navRoomSearchTextForLan.textContent = languagesData[attr].navRoomSearchText;
     reserveBtnForLan.textContent = languagesData[attr].reserveBtn;
+
+
+    navSubRoomSearchForLan.textContent = languagesData[attr].navSubRoomSearch;
+
+    navListVerticalHomeForLan.textContent = languagesData[attr].navListVerticalHome;
+    navListVerticalStayForLan.textContent = languagesData[attr].navListVerticalStay;
+    navListVerticalDayTripForLan.textContent = languagesData[attr].navListVerticalDayTrip;
+
+    navListVerticalRestaurantForLan.textContent = languagesData[attr].navListVerticalRestaurant;
+
+    navListVerticalNewsForLan.textContent = languagesData[attr].navListVerticalNews;
+
+    navListVerticalGalleryForLan.textContent = languagesData[attr].navListVerticalGallery;
+
+    navListVerticalAccessForLan.textContent = languagesData[attr].navListVerticalAccess;
+
+    navListVerticalFacilitiesForLan.textContent = languagesData[attr].navListVerticalFacilities;
+
+    navListVerticalActivitiesForLan.textContent = languagesData[attr].navListVerticalActivities;
+    navListVerticalShoppingForLan.textContent = languagesData[attr].navListVerticalShopping;
+    navListVerticalQuestionForLan.textContent = languagesData[attr].navListVerticalQuestion;
+
+
+
+
+
+
+
+
+
     aboutSectionTextForLan.innerHTML = languagesData[attr].aboutSectionText;
     aboutRoomBtnForLanForLan.textContent = languagesData[attr].aboutRoomBtn;
     staySectionTitleForLan.textContent = languagesData[attr].staySectionTitle;
@@ -100,6 +149,94 @@ el.addEventListener('click', () => {
 
 
 let languagesData ={
+    "japanese":{
+
+
+        "navListStayBtn": "ご宿泊",
+        "navListDayTripBtn": "日帰り",
+        "navListRestaurantBtn": "懐石料理 花壇",
+        "navListNewsBtn": "お知らせ",
+        "navListGalleryBtn": "ギャラリー",
+        "navListAccessBtn": "アクセス",
+        "navListFacliitiesBtn": "施設を巡る",
+        "navListActivitiesBtn": "周辺を巡る",
+        "navRoomSearchText" : "空室検索",
+        "reserveBtn" : "空室検索",
+
+
+        "navSubRoomSearch": "空室検索",
+        "navListVerticalHome": "ホーム",
+        "navListVerticalStay": "ご宿泊",
+        "navListVerticalDayTrip": "日帰り",
+        "navListVerticalRestaurant": "懐石料理 花壇",
+        "navListVerticalNews": "お知らせ",
+        "navListVerticalGallery": "ギャラリー",
+        "navListVerticalAccess": "アクセス",
+        "navListVerticalFacilities": "施設を巡る",
+        "navListVerticalActivities": "周辺を巡る",
+        "navListVerticalShopping": "花壇ショッピング",
+        "navListVerticalQuestion": "お問合せ",
+
+
+
+
+
+
+
+
+
+
+        "aboutSectionText" : `箱根強羅の旧閑院宮別邸跡地に
+        <br class="sp-hide">
+        立地する強羅花壇。
+        <br>
+        日本古来の素材と現代的表現を併せ持つ館、
+        <br class="sp-hide">
+        源泉からこんこんと湧き出る温泉、
+        <br>
+        精選した旬の食材で彩られる本格懐石料理。
+        <br>
+        伝統的な「和」の息づく空間で、
+        <br class="sp-hide">
+        至極のひとときをお過ごしくださいませ。`,
+        "aboutRoomBtn" : "新客室　別邸「暁」「曙」特設ページ",
+        "staySectionTitle": "ご宿泊",
+        "allRoomsBtn" : "客室一覧",
+        "newsSectiontitle" : "お知らせ",
+        "newsWrap1stTitle" : "【期間限定】フットマッサージ",
+        "newsWrap1stBox" : "KADAN SPA強羅花壇",
+        
+        "newsWrap2ndTitle" : `全国旅行支援「いざ、神奈川」`,
+        "newsWrap2ndBox" : "強羅花壇懐石料理 花壇",
+        "newsWrap3rdTitle" : "令和4年 初夏　新KADAN SPA誕生 KADAN",
+        "newsWrap3rdBox" : "KADAN SPA強羅花壇",
+        "newsWrap4thTitle" : "オンライン会員】平日限定結婚記念日プラン ",
+        "newsWrap4thBox" : "強羅花壇",
+
+        "allNewsBtn" : "お知らせ一覧",
+
+        "allGalleryBtn": "ギャラリー",
+
+        "footerHomeBtn": "ホーム",
+        "footerShoppingBtn": "花壇ショッピング",
+        "footerFactSheetBtn": "ファクトシート",
+        "footerPrivacyPolicyBtn": "プライバシーポリシー",
+
+        "footerAddress" : `
+        250-0408 神奈川県足柄下郡箱根町強羅1300
+        <br>
+        Tel: 0460-82-3331
+        <br>
+        Email: info@gorakadan.com`
+
+        
+
+
+   },
+
+
+
+
     "english":{
 
          "navListStayBtn": "Stay",
@@ -112,6 +249,24 @@ let languagesData ={
          "navListActivitiesBtn": "Activities",
          "navRoomSearchText" : "Search",
          "reserveBtn" : "Find Room",
+
+
+
+         "navSubRoomSearch": "Reserve",
+         "navListVerticalHome": "Home",
+         "navListVerticalStay": "Stay",
+         "navListVerticalDayTrip": "Day Trip",
+         "navListVerticalRestaurant": "Kaiseki Restaurant",
+         "navListVerticalNews": "News",
+         "navListVerticalGallery": "Gallery",
+         "navListVerticalAccess": "Access",
+         "navListVerticalFacilities": "Facliities",
+         "navListVerticalActivities": "Activities",
+         "navListVerticalShopping": "Shopping",
+         "navListVerticalQuestion": "Question",
+ 
+
+
          "aboutSectionText" : `Gora Kadan is located on the grounds of Kan’in-no-miya Villa,
          <br class="sp-hide">
          the former summer villa of a member of the Imperial Family in the town of Gora in Hakone.
@@ -159,56 +314,77 @@ let languagesData ={
     },
     "chinese":{
 
-        "navListStayBtn": "ke fang",
-        "navListDayTripBtn": "yi ri you",
-        "navListRestaurantBtn": "huai shi liao li",
-        "navListNewsBtn": "gong gao",
-        "navListGalleryBtn": "lv dian yi lan",
-        "navListAccessBtn": "dizhi",
-        "navListFacliitiesBtn": "lv guan she shi",
-        "navListActivitiesBtn": "lv guan zhou wei",
-        "navRoomSearchText" : "yu ding ke fang",
-        "reserveBtn" : "yu ding ke fang",
-        "aboutSectionText" : `Gora Kadan is located on the grounds of Kan’in-no-miya Villa,
+
+        "navSubRoomSearch": "预订客房",
+        "navListStayBtn": "客房",
+        "navListDayTripBtn": "一日游",
+        "navListRestaurantBtn": "怀石料理",
+        "navListNewsBtn": "公告",
+        "navListGalleryBtn": "旅馆一览",
+        "navListAccessBtn": "地址",
+        "navListFacliitiesBtn": "旅馆设施",
+        "navListActivitiesBtn": "旅馆周边",
+        "navRoomSearchText" : "预订客房",
+        "reserveBtn" : "预订客房",
+
+
+        "navSubRoomSearch": "空室検索",
+        "navListVerticalHome": "主页",
+        "navListVerticalStay": "客房",
+        "navListVerticalDayTrip": "一日游",
+        "navListVerticalRestaurant": "怀石料理",
+        "navListVerticalNews": "公告",
+        "navListVerticalGallery": "旅馆一览",
+        "navListVerticalAccess": "地址",
+        "navListVerticalFacilities": "旅馆设施",
+        "navListVerticalActivities": "旅馆周边",
+        "navListVerticalShopping": "购物",
+        "navListVerticalQuestion": "咨询",
+
+
+
+        "aboutSectionText" : `箱根强罗花坛位于
         <br class="sp-hide">
-        the former summer villa of a member of the Imperial Family in the town of Gora in Hakone.
+        前日本四大贵族前閑院宮的别邸领地，
         <br>
-        In this villa, which blends Japanese tradition along with modern design elements,
+        日本自古以来的素材和现代化美观融为一体，
         <br class="sp-hide">
-        we offer hot spring waters that flow freely from the source
+        从泉源滚滚涌出的温泉,
         <br class="sp-hide">
-        and an authentic kaiseki cuisine prepared with strictly selected seasonal ingredients.
+        用精选当季时令食材点缀的正宗怀石料理，
         <br>
-        We hope you will enjoy a blissful moment in a traditional Japanese atmosphere at Gora Kadan.`,
+        请在充满“和”气息的空间里，
+        <br>
+        留下至上的回忆。`,
         "aboutRoomBtn" : "check some special rooms",
-        "staySectionTitle": "Stay",
-        "allRoomsBtn" : "See All Room",
-        "newsSectiontitle" : "News",
-        "newsWrap1stTitle" : "[Limited] Foot Massage",
-        "newsWrap1stBox" : "KADAN SPA",
+        "staySectionTitle": "客房",
+        "allRoomsBtn" : "客房一览",
+        "newsSectiontitle" : "公告",
+        "newsWrap1stTitle" : "[限时] 足疗",
+        "newsWrap1stBox" : "SPA",
         
-        "newsWrap2ndTitle" : `National Travel Support "Kanagawa right now."`,
-        "newsWrap2ndBox" : "Kaiseki Restaurant",
-        "newsWrap3rdTitle" : "New Spa Opens in Summer 2022",
+        "newsWrap2ndTitle" : `全国旅行支援 "去吧，神奈川。"`,
+        "newsWrap2ndBox" : "怀石料理",
+        "newsWrap3rdTitle" : "2022年 初夏 新KADAN SPA诞生",
         "newsWrap3rdBox" : "KADAN SPA",
-        "newsWrap4thTitle" : "Weekdays Wedding Anniversary Plan for Online Members",
-        "newsWrap4thBox" : "GORA KADAN",
+        "newsWrap4thTitle" : "【官网会员】平日限定结婚纪念日计划",
+        "newsWrap4thBox" : "强罗花坛",
 
-        "allNewsBtn" : "All News",
+        "allNewsBtn" : "公告一览",
 
-        "allGalleryBtn": "Gallery",
+        "allGalleryBtn": "旅馆一览",
 
-        "footerHomeBtn": "Home",
-        "footerShoppingBtn": "KADAN Shopping",
-        "footerFactSheetBtn": "Fact Sheet",
-        "footerPrivacyPolicyBtn": "Privacy Policy",
+        "footerHomeBtn": "主页",
+        "footerShoppingBtn": "花坛购物",
+        "footerFactSheetBtn": "资料页",
+        "footerPrivacyPolicyBtn": "隐私政策",
 
         "footerAddress" : `
-        1300 Gora, Hakone-machi, Ashigarashimo-gun, Kanagawa, Japan 250-0408
+        神奈川县足柄下郡箱根町强罗1300
         <br>
-        Tel: +81-460-82-3331
+        联系电话: +81-460-82-3331
         <br>
-        Email: info@gorakadan.com`
+        电子邮箱： info@gorakadan.com`
 
         
 
@@ -228,29 +404,53 @@ let languagesData ={
     "navListActivitiesBtn": "주변 둘러보기",
     "navRoomSearchText" : "객실 예약",
     "reserveBtn" : "예약하기",
-    "aboutSectionText" : `Gora Kadan is located on the grounds of Kan’in-no-miya Villa,
+
+
+    "navSubRoomSearch": "예약하기",
+    "navListVerticalHome": "홈페이지",
+    "navListVerticalStay": "객실",
+    "navListVerticalDayTrip": "원데이 트립",
+    "navListVerticalRestaurant": "가이세키 요리",
+    "navListVerticalNews": "공지",
+    "navListVerticalGallery": "갤러리",
+    "navListVerticalAccess": "오시는 길",
+    "navListVerticalFacilities": "시설 둘러보기",
+    "navListVerticalActivities": "주변 둘러보기",
+    "navListVerticalShopping": "쇼핑",
+    "navListVerticalQuestion": "문의하기",
+
+
+
+
+
+
+
+    "aboutSectionText" : `저희 하코네 고라카단은,
     <br class="sp-hide">
-    the former summer villa of a member of the Imperial Family in the town of Gora in Hakone.
+    옛 4대귀족 간인노미야 일족 별저 영지에 위치해 있습니다.
     <br>
-    In this villa, which blends Japanese tradition along with modern design elements,
+    일본 전통적인 소재와 현대적 표현이 공존한 료칸입니다. 
     <br class="sp-hide">
-    we offer hot spring waters that flow freely from the source
+    원천에서 용솟음쳐 나오는 온천,
     <br class="sp-hide">
-    and an authentic kaiseki cuisine prepared with strictly selected seasonal ingredients.
+    엄선한 제철 식재료로 각색된 전통 카이세키 요리,
     <br>
-    We hope you will enjoy a blissful moment in a traditional Japanese atmosphere at Gora Kadan.`,
+    전통적인 "和"가 숨쉬는 공간에서
+    <br>
+    더없이 좋은 시간을 보내십시오.
+    `,
     "aboutRoomBtn" : `신설 객실 별장 "아카츠키", "아케보노" 둘러보기 `,
     "staySectionTitle": "객실",
     "allRoomsBtn" : "모든 객실 보기",
     "newsSectiontitle" : "공지",
-    "newsWrap1stTitle" : "[기간 한정] 풋 마지",
+    "newsWrap1stTitle" : "[기간 한정] 풋 마사지",
     "newsWrap1stBox" : "SPA",
     
     "newsWrap2ndTitle" : `전국 여행 지원 "지금 바로 카나가와로."`,
     "newsWrap2ndBox" : "카이세키 요리",
     "newsWrap3rdTitle" : "2022년 여름 신설 카단 스파 개장",
     "newsWrap3rdBox" : "카단 스파",
-    "newsWrap4thTitle" : "【온라인 맴버십】평일한정 결혼 기념일 세트",
+    "newsWrap4thTitle" : "【온라인 맴버십】평일한정 결혼 기념일 플랜",
     "newsWrap4thBox" : "고라카단",
 
     "allNewsBtn" : "모든 공지 보기",
