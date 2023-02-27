@@ -58,9 +58,7 @@ const footerPrivacyPolicyBtnForLan = document.querySelector(".footer-nav li:nth-
 const footerAddressForLan = document.querySelector(".footer-address")
 
 
-
-
-
+const navRoomSearchBtn = document.querySelector(".nav-room-search a")
 
 
 
@@ -70,6 +68,36 @@ el.addEventListener('click', () => {
 
     const attr = el.getAttribute('language');
     console.log(attr);
+
+
+
+    const allTextElements = document.querySelectorAll("body *");
+
+
+
+
+    if (attr == "korean"){
+        allTextElements.forEach((a) => {
+
+            navRoomSearchBtn.style.letterSpacing = "0.2em";
+
+
+        })}
+
+    if (attr == "japanese"){
+        allTextElements.forEach((a) => {
+            a.style.fontFamily = "'Noto Serif JP', serif;";
+            
+        })}
+    
+    if (attr == "english"){
+        allTextElements.forEach((a) => {
+            navRoomSearchBtn.style.letterSpacing = "0.2em";
+            
+        })}
+    
+
+
 
 
     navListStayBtnForLan.textContent = languagesData[attr].navListStayBtn;
@@ -356,7 +384,7 @@ let languagesData ={
         请在充满“和”气息的空间里，
         <br>
         留下至上的回忆。`,
-        "aboutRoomBtn" : "check some special rooms",
+        "aboutRoomBtn" : "欣赏新客房 別邸「暁」「曙」",
         "staySectionTitle": "客房",
         "allRoomsBtn" : "客房一览",
         "newsSectiontitle" : "公告",

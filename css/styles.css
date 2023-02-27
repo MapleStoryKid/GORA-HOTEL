@@ -18,6 +18,7 @@ main{
   position: relative;
   z-index: 1;
   width: 100vw;
+  overflow: hidden;
 }
 
 .all-screen-nav{
@@ -287,6 +288,10 @@ letter-spacing: 0.4em;
 transition: .3s;
 
 }
+
+
+
+
 
 
 
@@ -973,12 +978,40 @@ footer{
     right: 10px;
 
   }
+  .about-section{
+
+    margin: 0 auto;
+    width: 90vw;
+    font-size: 0.9rem;
+    text-align: center;
+  
+  }
+
+  .about-logo{
+    width: 3rem;
+  }
+
+  .about-room-btn{
+
+    max-width: 90vw;
+    font-size: 0.8rem;
+
+
+
+  }
+
+  .about-room-btn a{
+
+
+
+
+  }
 
 
 
 }
 .about-section-text{
-  /* below fade-in effect */
+
   opacity: 0;
 
 }
