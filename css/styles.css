@@ -4,8 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300&display=swap');
 @import "reset.css";
 @import "button.css";
-/* @import "loading.css"; */
-@import "media-middle.css";
+@import "loading.css";
+
 
 
 
@@ -27,7 +27,7 @@ main{
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: 99999999999999999999999999999;
+  z-index: 9999;
   background-color: white;
   box-sizing: border-box;
   border: 25px solid black;
@@ -54,7 +54,7 @@ main{
 
 
 .nav-wrap{
-  width: 400px;
+  width: 70%;
   margin: 0 auto;
   position: absolute;
   left: 0;
@@ -585,7 +585,7 @@ transition: .3s;
 
 
 .news-section{
-  width: 750px;
+  max-width: 750px;
   margin: 160px auto 0px;
 }
 
@@ -611,7 +611,7 @@ transition: .3s;
 
 
 .news-wrap dl dt{
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   display: inline-block;
   width: 30%;
   letter-spacing: 1px;
@@ -814,8 +814,6 @@ footer{
   height: 350px;
   
 
-
-
   background-color: black;
 
 }
@@ -841,13 +839,17 @@ footer{
 
 .footer-nav li{
   margin-right: 35px;
+  font-size: 1rem;
+  white-space: nowrap;
 
 }
 
 
 .footer-address{
   line-height:1.8;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.08rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
 }
 
 
@@ -861,6 +863,7 @@ footer{
 
 .footer-sns{
   display: flex;
+  justify-content: center;
 }
 
 .footer-sns li a img{
@@ -879,7 +882,7 @@ footer{
 }
 
 .copyright {
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   text-align: right;
   color: #FFF;
   margin-top: 30px;
@@ -963,6 +966,17 @@ footer{
 
 
 @media screen and (max-width: 780px){
+  .loading-wrap{
+    display: none;
+  }
+
+  .introPic{
+
+width: 100px;
+animation: spani2 2.7s steps(27) forwards;
+  }
+
+
 
   .nav-right{
     display: none;
@@ -978,10 +992,73 @@ footer{
     right: 10px;
 
   }
+
+  
+
+
+
+
+
+
+  .nav-sub{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-wrap{
+    width: 60%;
+
+  }
+
+
+
+  .nav-list-vertical{
+  text-align: center;
+  width: 100%;
+
+}
+
+.nav-list-vertical>li{
+  font-size: 0.8rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+.slide{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+.slide img{
+  width: 60%;
+  height: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
   .about-section{
 
     margin: 0 auto;
-    width: 90vw;
+    width: 80%;
     font-size: 0.9rem;
     text-align: center;
   
@@ -1000,12 +1077,83 @@ footer{
 
   }
 
-  .about-room-btn a{
+  .news-section{
+    max-width: 90vw;
+  }
 
+  .newsWrap1stBox,
+  .newsWrap2ndBox,
+  .newsWrap3rdBox,
+  .newsWrap4thBox{
+    display: none;
+  }
 
+  .newsWrap1stTitle,
+  .newsWrap2ndTitle,
+  .newsWrap3rdTitle,
+  .newsWrap4thTitle
+  {
+    font-size: 0.8rem;
+  }
 
+  .footer-wrap{
+    display:grid;
+    max-width: 90vw;
+  }
+
+  .footer-nav{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .footer-nav li{
+    font-size: 0.8rem;
+    margin-top: 20px;
 
   }
+
+  .footer-left{
+    padding-top: 30px;
+    width: 100%;
+    display: block;
+  }
+  .footer-right{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 20px;
+    
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #FFF;
+    margin-top: 30px;
+    line-height: 1px;
+    letter-spacing: 0.1rem;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
